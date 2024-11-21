@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skincare Page</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <!-- Navbar Section -->
+  <header>
+    <h4>GlowSkin</h4>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#our-package">Our Package</a></li>
+        <li><a href="#contact-us">Call Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner Section -->
+    <section class="banner" id="home">
+      <div class="banner-slide">
+        <img src="assets/1.png" alt="Skincare Banner 1" class="active">
+        <img src="assets/2.png" alt="Skincare Banner 2">
+        <img src="assets/3.png" alt="Skincare Banner 3">
+      </div>
+    </section>
+
+  <!-- Statement Section -->
+<section class="statement">
+  <h1>SKINCARE THAT IS GOOD FOR YOU AND THE PLANET</h1>
+  <p>Skincare adalah rangkaian perawatan kulit yang bertujuan menjaga kesehatan dan kecantikan kulit, baik wajah maupun tubuh. Skincare dapat disesuaikan dengan kebutuhan kulit masing-masing, seperti kulit berminyak, kering, sensitif, atau kombinasi. Perawatan kulit yang konsisten membantu mencegah masalah seperti jerawat, penuaan dini, atau hiperpigmentasi, serta mendukung regenerasi kulit agar tetap sehat dan bercahaya.</p>
+</section>
+
+<section class="photo-gallery">
+  <h2>Our Beautiful Moments</h2>
+  <p>Galeri kami menampilkan momen-momen istimewa yang merepresentasikan kecantikan alami dan sentuhan perawatan terbaik. Lihat lebih dekat dan rasakan keindahan yang kami hadirkan.</p>
+  
+  <div class="photo-container">
+    <img src="assets/Photo1.jfif" alt="Photo 1" class="styled-photo">
+    <img src="assets/Photo2.jfif" alt="Photo 2" class="styled-photo">
+    <img src="assets/Photo3.jfif" alt="Photo 3" class="styled-photo">
+    <img src="assets/Photo4.jfif" alt="Photo 4" class="styled-photo">
+  </div>
+</section>
+
+<section class="popular-products">
+  <h2>Our Popular Product</h2>
+  <p>Explore our most loved skincare products designed for your natural beauty.</p>
+
+  <div class="product-container">
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="assets/Product 1.jfif" alt="Product Acne">
+      <h3>Body Cream</h3>
+      <p>For smooth and hydrated skin.</p>
+      <p class="price">$11.50</p>
+      <a href="#" class="buy-now">Buy Now</a>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="assets/Product 2.jfif" alt="Product Normal">
+      <h3>Hyaluronic Skin Tint</h3>
+      <p>Lightweight coverage with hydration.</p>
+      <p class="price">$12.00</p>
+      <a href="#" class="buy-now">Buy Now</a>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="assets/Product 3.jfif" alt="Product Mix">
+      <h3>Body Lotion</h3>
+      <p>Luxurious care for your skin.</p>
+      <p class="price">$10.50</p>
+      <a href="#" class="buy-now">Buy Now</a>
+    </div>
+  </div>
+</section>
+
+    <section class="skin-glow-section">
+      <h2>Get Your Skin To Glow</h2>
+      <div class="glow-container">
+        <div class="glow-card" data-info="Beauty Glow: Penjelasan detail mengenai kecantikan alami yang bersinar.">
+          <h3>Beauty Glow</h3>
+          <p>We are constantly learning and growing. We attend classes and seminars.</p>
+          <button class="learn-more">LEARN MORE</button>
+        </div>
+        <div class="glow-card" data-info="Natural Glow: Fokus pada perawatan kulit alami dengan bahan-bahan organik.">
+          <h3>Natural Glow</h3>
+          <p>We are constantly learning and growing. We attend classes and seminars.</p>
+          <button class="learn-more">LEARN MORE</button>
+        </div>
+        <div class="glow-card" data-info="Beauty Skin: Rangkaian produk untuk merawat kulit dengan nutrisi terbaik.">
+          <h3>Beauty Skin</h3>
+          <p>We are constantly learning and growing. We attend classes and seminars.</p>
+          <button class="learn-more">LEARN MORE</button>
+        </div>
+        <div class="glow-card" data-info="Flawless Skin: Menyempurnakan kulit Anda dengan perawatan premium.">
+          <h3>Flawless Skin</h3>
+          <p>We are constantly learning and growing. We attend classes and seminars.</p>
+          <button class="learn-more">LEARN MORE</button>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Modal Popup -->
+    <div class="modal" id="infoModal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3>Details</h3>
+        <p id="modal-text"></p>
+      </div>
+    </div>
+    
+
+    <section class="form-section" id="contact-us">
+      <h2>Contact Us</h2>
+      <div class="form-container">
+        <!-- Bagian Gambar -->
+        <div class="form-image">
+          <img src="assets/contact-image.png" alt="Contact Us Image">
+        </div>
+    
+        <!-- Bagian Form -->
+        <form id="contact-form">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+          
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+          
+          <label for="concern">What is your skincare concern?</label>
+          <select id="concern" name="concern">
+            <option value="acne">Acne</option>
+            <option value="aging">Aging</option>
+            <option value="hydration">Hydration</option>
+            <option value="sensitivity">Sensitivity</option>
+          </select>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+    
+
+        <footer class="footer">
+          <div class="footer-container">
+            <div class="footer-section logo-section">
+              <h2>GlowSkin</h2>
+              <p>Kami menyediakan perawatan kulit terbaik dengan bahan alami dan teknologi terkini. Jaga kecantikan dan kesehatan kulitmu bersama kami.</p>
+            </div>
+        
+            <div class="footer-section services-section">
+              <h3>Layanan</h3>
+              <ul>
+                <li><a href="#home">Skincare Rutin</a></li>
+                <li><a href="#our-package">Paket Glow Up</a></li>
+                <li><a href="#contact-us">Konsultasi Kulit</a></li>
+                <li><a href="#blog">Artikel Kesehatan Kulit</a></li>
+              </ul>
+            </div>
+        
+            <div class="footer-section company-section">
+              <h3>Perusahaan</h3>
+              <ul>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#career">Karir</a></li>
+                <li><a href="#testimonial">Testimoni</a></li>
+                <li><a href="#privacy-policy">Kebijakan Privasi</a></li>
+              </ul>
+            </div>
+        
+            <div class="footer-section contact-section">
+              <h3>Kontak</h3>
+              <p>Email: <a href="mailto:support@glowskin.com">support@glowskin.com</a></p>
+              <p>Telepon: 123-456-7890</p>
+              <p>Alamat: 123 GlowSkin Street
+                </p>
+            </div>
+            <div class="footer-section company-section">
+              <h3>Perusahaan</h3>
+              <ul>
+                <li><a href="#about-us">Tentang Kami</a></li>
+                <li><a href="#our-team">Tim Kami</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#careers">Karir</a></li>
+              </ul>
+            </div>
+        
+            <div class="footer-section contact-section">
+              <h3>Kontak</h3>
+              <p>📞 123-456-7890</p>
+              <p>📧 support@glowskin.com</p>
+              <p>🏢 123 GlowSkin Street, Beauty City</p>
+              <p>Jam Operasional: Senin-Jumat, 9 AM - 6 PM</p>
+            </div>
+          </div>
+        
+          <div class="footer-bottom">
+            <p>&copy; 2024 GlowSkin. All rights reserved.</p>
+            <p>Made with ❤️ by GlowSkin Team</p>
+          </div>
+        </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
